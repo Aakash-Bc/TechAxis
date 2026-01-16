@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lognav</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(./images/hill.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            height: 100vh;
+            
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+            height: 60px;
+            background-color:rgb(25, 36, 62) ;
+            text-align: center;
+        }
+        .logo{
+            padding: 2px 10px;
+            font-size: 14px;
+            color: white;
+            justify-content: start;
+        }
+        .logo h1{
+            margin-left: -20px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 16px;
+            gap: 24px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: rgb(215, 200, 200);
+            border-radius: 6px;
+            border: none;
+            padding: 8px ;
+            margin: 4px;
+            
+        }
+        .nav a:hover{
+            color: white;
+            background-color: green;
+
+        }
+        .father{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin: 20px;
+            
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+            text-align: center;
+            background-color: aliceblue;
+            width: 320px;
+            height: 300px;
+            border-radius: 8px;
+            background: transparent;
+            backdrop-filter:blur(10px);
+            box-shadow:slategrey;
+           
+            
+        }
+        
+        .hero h1{
+            color: black;
+            font-size: 30px;
+        }
+        .hero .email input{
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            padding: 4px 8px;
+            margin: 16px 0;
+            background: transparent;
+            color: black;
+            outline: none;
+        }
+        .hero .password input{
+             width: 100%;
+            border: none;
+            border-radius: 6px;
+            padding: 4px 8px;
+            margin: 16px 0;
+            background: transparent;
+            color: black;
+            outline: none;
+        }
+        
+        .hero .check{
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            margin: 15px 0;
+        }
+        .check a{
+            text-decoration: none;
+            color:  black;
+
+        }
+        .check a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .btn {
+            margin: 10px, 16px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            background-color: blue;
+            color: black;
+            font-size: 20px;
+            border: none;
+            color: black;
+            width: 100%;
+        }
+        .btn:hover{
+            background-color: darkblue;
+        }
+        .for a{
+            color: black;
+            text-decoration: none;
+
+        }
+        .for p{
+            color: black;
+        }
+        .for a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        ::placeholder{
+                    color: black;
+                    opacity: 1;   
+                }
+                
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+    <h1>Axis</h1>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Project</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+       <div class="father">
+         <div class="hero">
+            <form action="">
+                <h1>Login</h1>
+                <div class="email">
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Enter your passwrod">
+                </div>
+                
+                    <div class="check">
+                    <input type="checkbox" id="reme">
+                    <label for="reme"> Remember me</label>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button class="btn"><b>Login</b></button>
+                <div class="for">
+                    <p>Don't have a account? <a href="#">Register</a></p>
+                </div>
+
+            </form>
+        </div>
+       </div>
+    
+</body>
+</html>

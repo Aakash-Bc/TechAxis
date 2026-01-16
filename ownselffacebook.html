@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: poppins, sans-serif;
+            background-color: #ccc;
+        }
+
+        .sec{
+            background-size: cover;       
+            background-position: center; 
+            background-repeat: no-repeat;
+            min-height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(./images/lion.jpg);
+        }
+        
+        
+            .face{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            gap: 50px;
+            height: 100vh;
+        
+        }
+       
+        .left{
+            width: 50%;
+            background-color:none;
+            margin-right: 16px ;
+            padding: 20px;
+        }
+        .left h1{
+            margin-bottom: 10px;
+            color:black;
+            font-size: 50px;
+        }
+        .left p{
+            margin-bottom: 8px;
+            font-size: 26px;
+            color: black;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 34%;
+            background-color: floralwhite;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: darkslategray 2px 4px 6px;
+            background-color: rgba(255, 255, 255, 0.92);
+        }
+        input[type="text"], input[type="password"]
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: blue;
+            color:#ffff;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+        .btn:hover{
+            background-color: darkblue;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover{
+            text-decoration: underline;
+            
+        }
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        .btn1{
+            padding: 10px 20px;
+            background-color: green;
+            border: none;
+            border-radius: 8px;
+            color: #ffff;
+            cursor: pointer;
+            margin-left: 60px;
+            width: 65%;
+            font-size: 14px;
+        }
+        .btn1:hover{
+            background-color: darkgreen;
+        }
+        .page-text{
+            margin-top: 15px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        .btn2{
+            padding: 8px 12px;
+            background-color: blue;
+            color:#ffff;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .btn2:hover{
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="sec">
+        <div class="face">
+            <!-- left div -->
+            <div class="left">
+                <h1>Facebook</h1>
+                <p>Connect with friends and the world around you on Facebook.</p>
+                <button class="btn2">Let Get's Connect</button>
+            </div>
+            <!-- right div -->
+             <div class="right">
+                <form action="">
+                    <input type="text" placeholder="Enter your email or phone number">
+                    <input type="password" placeholder="Enter your password">
+                    <button class="btn">Login</button>
+                    <a href="#"> Forget password?</a>
+                    <hr>
+                    <button class="btn1">Create New Account</button>
+                </form>
+                <!-- <div>
+                    <p class="page-text"><b>Create a page </b> for a celebrity, band or business.</p>
+                </div> -->
+                    
+             </div>
+                
+             
+        </div>
+        
+    </section>
+</body>
+</html>

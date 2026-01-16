@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restor</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.containar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+}
+.logo{
+    padding: 0 12px;
+    margin: 12px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+nav a:hover{
+    background-color: burlywood;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    
+}
+.content{
+    width: 600px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+
+    margin-top: 30px;
+    margin-right: 40px;
+    position: relative;
+    animation: aakash 2s ease-in-out infinite alternate;
+   
+}
+@keyframes aakash {
+    from{
+        top: -8px;
+    }
+    to{
+        top: 8px;
+    }
+    
+}
+
+.hero h1{
+    padding: 0 12px;
+    color: red;
+    margin: 12px;
+    
+}
+.hero h4{
+    padding: 0 12px;
+    margin: 12px;
+}
+.hero p{
+    padding: 0 12px;
+    margin: 12px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="containar">
+        <div class="logo">
+            <h1>Restro</h1>
+
+        </div>
+        <div class="navitems">
+            <nav>
+                <a href="#"> Home</a>
+                <a href="#"> Special Dish</a>
+                <a href="#"> Our Menu</a>
+                <a href="#"> Order</a>
+                <a href="#"> Conact</a>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="hero">
+            <div class="content">
+                <h1>Welcome to our website</h1>
+                <h4>Todays special dish and special discounts offers.</h4>
+               
+                <p>DSA stands for Data Structures and Algorithms. Data structures manage how data is stored and accessed. Algorithms focus on processing this data. Examples of data structures are Array, Linked List, Tree and Heap, and examples of algorithms are Binary Search, Quick Sort and Merge Sort.</p>
+            
+            
+            </div>
+            <div class="image">
+                <img src="./images/burger.png" alt="burger">
+            </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            padding:10px 0;
+            
+        
+        }
+
+        .containar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+          
+            height: 50px;
+
+        }
+        .logo{
+            color: red;
+            font-size: 14px;
+            padding: 0 10px;
+        }
+        nav{
+            display: flex;
+            gap: 28px;
+            margin: 0 8px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 6px 8px;
+            border-radius: 6px;
+            
+        }
+        nav a:hover{
+            text-decoration: underline;
+            background-color: wheat;
+        }
+        .hero{
+            display: flex;
+            margin: 20px 12px;
+            align-items: center;
+            gap: 80px;
+
+        }
+        .image{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .image img{
+            width: 300px;
+            height:300px;
+            border-radius: 50%;
+            background: fixed;
+            margin-left: 100px;
+            position: relative;
+            animation: donkey 2s ease-in-out infinite alternate;
+        }
+        @keyframes donkey {
+            from{
+                top: -10px;
+            }
+            to{
+                top: 10px;
+            }
+            
+        }
+        
+        .sub-hero{
+            width: 100%;
+            margin-top: 60px;
+        }
+        .sub-hero h1{
+            margin: 8px 0;
+            font-weight:bold;
+            font-size: 48px;
+        }
+        .sub-hero h4{
+            color: red;
+            margin-bottom: 8px;
+            font-size: 20px;
+
+        }
+        .sub-hero p{
+            color: black;
+            font-family: 'Arial, Helvetica, sans-serif';
+            font-size: 16px;
+        }
+
+        .btn button{
+            margin: 10px 0;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background-color:darkblue;
+            border: none;
+            color: white;
+            
+        }
+        .btn button:hover{
+            background-color: blue;
+        }
+
+
+ 
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="logo">
+            <h1>Athena</h1>
+        </div>
+        <div class="nav-items">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="sub-hero"> 
+            <h1>Some Catchy Line</h1>
+            <h4>Line to support the catchy line</h4>
+            <p>Hello guys, Good morning. It's me Aakash Budhathoki and currently i live in the dhapakhel lalitpur. Basically, i am from salyan which is located in karnali province. I am studying in bachelor in Computer Appllication.</p>
+            <div class="btn">
+                <button>Get Started</button>
+            </div>
+        
+        </div>
+        <div class="image">
+            <img src="./images/burger.png" alt="lion">
+        </div>
+    </div>
+</body>
+</html>
